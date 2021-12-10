@@ -167,6 +167,9 @@ button{
 .question img:hover{
     transform: translateY(-10px);
 }
+.question .accordion{
+    padding-left: 30px;
+}
 .question .accordion .card{
     margin-bottom: 15px ;
     border-radius:5px;
@@ -275,7 +278,7 @@ button{
     padding-left: 0;
 }
 .featured__content h3{
-    font-size: 30px;
+    font-size: 29px;
     font-weight: 600;
     padding: 0 0 12px;
 }
@@ -536,7 +539,7 @@ button{
     position: fixed;
     z-index: 1;
     right: 0;
-    bottom: 50px;
+    bottom: 80px;
     display: block;
     width: 50px;
     height: 45px;
@@ -599,7 +602,9 @@ button{
     .featured{
         padding: 0px 0 50px;
     } 
-
+    .featured__content h3{
+        font-size: 26px;
+    }
     /* TESTIMONIAL */
     
     .testimonials .testimonials__content{
@@ -637,14 +642,16 @@ button{
         text-align: center;
     }
 }
-@media screen and (max-width:768px){
 
-    
+@media screen and (max-width:890px){
+    .question .btn{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:768px){
     .heading{
         font-size: 40px;
     }
-
-    
 
     /* FEATURE */
     .featured{
@@ -678,6 +685,17 @@ button{
         font-size: 25px;
     }
 
+    /* QUESTION */
+    .question__img{
+        padding-bottom: 50px;
+        
+    }
+    .question .accordion{
+        padding-left: 0;
+    }
+    .question .btn{
+        font-size: 20px;
+    }
     /* TESTIMONIAL */
     .testimonials .testimonials__content{
         padding-left: 20px;
@@ -690,10 +708,7 @@ button{
 }
 @media screen and (max-width:767px){
 
-    /* QUESTION */
-    .question .accordion{
-        padding-top: 50px;
-    }
+
     /* BRAND */
     .brand .brand__btn{
         line-height:45px;
@@ -726,6 +741,9 @@ button{
     }
     .featured__content h3{
         font-size: 24px;
+    }
+    .featured .featured__row{
+        padding: 5px 10px;
     }
     /* TESTIMONIAL */
     .testimonials__main{
@@ -768,8 +786,8 @@ button{
     
     /* FOOTER */
     .footer__form button {
-        width: 22%;
-        margin-left: 5px;
+        width: 30%;
+        /* margin-left: 5px; */
     }
 }
 @media screen and (max-width:320px){
